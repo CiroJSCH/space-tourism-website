@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .mobileMenu {
-  background-color: hsla(0, 0%, 100%, 0.05);
-  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
 }
