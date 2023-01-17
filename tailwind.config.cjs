@@ -10,7 +10,8 @@ module.exports = {
       xl: '1440px',
     },
     fontFamily: {
-      'belle': ['Bellefair', 'serif']
+      'belle': ['Bellefair', 'serif'],
+      'barlow': ['Barlow Condensed', 'sans-serif']
     }
   },
   plugins: [],
