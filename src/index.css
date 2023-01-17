@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mobileMenu {
+  background-color: hsla(0, 0%, 100%, 0.05);
+  backdrop-filter: blur(30px);
+}
