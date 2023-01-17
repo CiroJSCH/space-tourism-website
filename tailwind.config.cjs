@@ -9,6 +9,9 @@ module.exports = {
       lg: '1024px',
       xl: '1440px',
     },
+    fontFamily: {
+      'belle': ['Bellefair', 'serif']
+    }
   },
   plugins: [],
 };
