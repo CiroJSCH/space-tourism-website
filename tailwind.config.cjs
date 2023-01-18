@@ -15,8 +15,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "D0D6F9",
-        secondary: "0B0D17",
+        primary: "#D0D6F9",
+        secondary: "#0B0D17",
       },
       backgroundImage: {
         'mobile': "url('./src/assets/home/background-home-mobile.jpg')",
