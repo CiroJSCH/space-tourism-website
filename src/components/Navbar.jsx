@@ -71,7 +71,7 @@ const Navbar = () => {
       {/* END OF TABLET/DESKTOP MENU */}
 
       {/* WHITE LINE ON DESKTOP MENU */}
-      <hr className=' bg-white opacity-25 hidden xl:flex h-[1px] w-[60%] order-1 ml-[3.5rem] mr-[-1.6rem]'></hr>
+      <hr className='bg-white opacity-25 hidden xl:flex h-[1px] w-[60%] order-1 ml-[3.5rem] mr-[-1.6rem]'></hr>
     </nav>
   );
 };

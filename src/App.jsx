@@ -1,11 +1,6 @@
 // Components
 import { Navbar, Home } from './components';
 
-// Assets
-import homeMobile from './assets/home/background-home-mobile.jpg';
-import homeTablet from './assets/home/background-home-tablet.jpg';
-import homeDesktop from './assets/home/background-home-desktop.jpg';
-
 // Hooks
 import useMediaQuery from './hooks/useMediaQuery';
 
@@ -15,12 +10,14 @@ const App = () => {
 
   return (
     <div
-      className={`h-screen ${isDesktop ? "bg-desktop" : isTablet ? "bg-tablet" : "bg-mobile"} bg-cover`}
+      className={`h-screen ${
+        isDesktop ? 'bg-desktop' : isTablet ? 'bg-tablet' : 'bg-mobile'
+      } bg-no-repeat bg-cover`}
     >
       <header>
         <Navbar />
       </header>
-      <main className='z-10'>
+      <main className='xl:h-[calc(100vh-160px-1.75rem)]'>
         <Home />
       </main>
     </div>
