@@ -1,5 +1,5 @@
 // Components
-import { Navbar } from './components';
+import { Navbar, Home } from './components';
 
 // Assets
 import homeMobile from './assets/home/background-home-mobile.jpg';
@@ -14,16 +14,15 @@ const App = () => {
   const isTablet = useMediaQuery('(min-width: 768px)');
 
   return (
-    <div className='h-screen relative'>
-      <img
-        src={isDesktop ? homeDesktop : isTablet ? homeTablet : homeMobile}
-        alt='background image'
-        className='w-full h-full absolute top-0'
-      />
+    <div
+      className={`h-screen ${isDesktop ? "bg-desktop" : isTablet ? "bg-tablet" : "bg-mobile"} bg-cover`}
+    >
       <header>
         <Navbar />
       </header>
-      <main></main>
+      <main className='z-10'>
+        <Home />
+      </main>
     </div>
   );
 };
