@@ -49,6 +49,7 @@ const Navbar = () => {
                 className={`font-barlow text-white tracking-[2.7px] text-base ${
                   index !== links.length - 1 ? 'mb-8' : 'mb-0'
                 } leading-[19px]`}
+                onClick={() => setOpenMenu(false)}
               >
                 <span className='font-bold'>{number}</span>
                 <span className='ml-3 font-normal uppercase'>{name}</span>
