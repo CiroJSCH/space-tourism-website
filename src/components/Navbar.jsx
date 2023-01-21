@@ -41,14 +41,14 @@ const Navbar = () => {
             openMenu ? 'translate-x-0' : 'translate-x-[254px]'
           } ease-in-out duration-300`}
         >
-          <ul className='ml-8 mt-[169px]'>
+          <ul className='ml-8 mt-[169px] flex flex-col'>
             {links.map(({ number, name, path }, index) => (
               <Link
                 to={path}
                 key={`link-${number}`}
                 className={`font-barlow text-white tracking-[2.7px] text-base ${
                   index !== links.length - 1 ? 'mb-8' : 'mb-0'
-                }`}
+                } leading-[19px]`}
               >
                 <span className='font-bold'>{number}</span>
                 <span className='ml-3 font-normal uppercase'>{name}</span>
