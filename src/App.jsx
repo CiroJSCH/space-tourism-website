@@ -2,8 +2,7 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 // Components
-import { Navbar, Home } from './components';
-import Destination from './components/Destination';
+import { Navbar, Home, Crew, Destination, Technology } from './components';
 
 // Hooks
 import useMediaQuery from './hooks/useMediaQuery';
@@ -17,7 +16,6 @@ const App = () => {
 
   const { pathname } = useLocation();
   const background = bgImage[pathname];
-  console.log(pathname);
 
   return (
     <div
@@ -36,6 +34,8 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/destination' element={<Destination />} />
+          <Route path='/crew' element={<Crew />} />
+          <Route path='/technology' element={<Technology />} />
         </Routes>
       </main>
     </div>

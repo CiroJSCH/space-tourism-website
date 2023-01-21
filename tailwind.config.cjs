@@ -31,9 +31,9 @@ module.exports = {
         crewTablet: 'url(./src/assets/crew/background-crew-tablet.jpg)',
         crewDesktop: 'url(./src/assets/crew/background-crew-desktop.jpg)',
 
-        technologyMobile: 'url(./src/assets/technology/background-technology-mobile.jpg)',
-        technologyTablet: 'url(./src/assets/technology/background-technology-tablet.jpg)',
-        technologyDesktop: 'url(./src/assets/technology/background-technology-desktop.jpg)',
+        techMobile: 'url(./src/assets/technology/background-technology-mobile.jpg)',
+        techTablet: 'url(./src/assets/technology/background-technology-tablet.jpg)',
+        techDesktop: 'url(./src/assets/technology/background-technology-desktop.jpg)',
       }
     }
   },

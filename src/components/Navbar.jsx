@@ -1,5 +1,6 @@
 // Libraries
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // assets
 import logo from '../assets/shared/logo.svg';
@@ -7,10 +8,10 @@ import hamburger from '../assets/shared/icon-hamburger.svg';
 import close from '../assets/shared/icon-close.svg';
 
 const links = [
-  { number: '00', name: 'home' },
-  { number: '01', name: 'destination' },
-  { number: '02', name: 'crew' },
-  { number: '03', name: 'technology' },
+  { number: '00', name: 'home', path: '/' },
+  { number: '01', name: 'destination', path: '/destination' },
+  { number: '02', name: 'crew', path: '/crew' },
+  { number: '03', name: 'technology', path: '/technology' },
 ];
 
 const Navbar = () => {
@@ -18,7 +19,11 @@ const Navbar = () => {
 
   return (
     <nav className='flex items-center p-6 md:pt-0 md:pr-0 justify-between relative xl:pl-14 xl:pt-10 xl:pr-0'>
-      <img src={logo} alt='Logo' className='w-[40px] h-[40px] md:w-[48px] md:h-[48px]' />
+      <img
+        src={logo}
+        alt='Logo'
+        className='w-[40px] h-[40px] md:w-[48px] md:h-[48px]'
+      />
       <div className='md:hidden'>
         {/* START OF MOBILE MENU */}
         <img
@@ -37,8 +42,9 @@ const Navbar = () => {
           } ease-in-out duration-300`}
         >
           <ul className='ml-8 mt-[169px]'>
-            {links.map(({ number, name }, index) => (
-              <li
+            {links.map(({ number, name, path }, index) => (
+              <Link
+                to={path}
                 key={`link-${number}`}
                 className={`font-barlow text-white tracking-[2.7px] text-base ${
                   index !== links.length - 1 ? 'mb-8' : 'mb-0'
@@ -46,7 +52,7 @@ const Navbar = () => {
               >
                 <span className='font-bold'>{number}</span>
                 <span className='ml-3 font-normal uppercase'>{name}</span>
-              </li>
+              </Link>
             ))}
           </ul>
         </div>
@@ -55,8 +61,9 @@ const Navbar = () => {
       {/* START OF TABLET/DESKTOP MENU */}
       <div className='hidden md:flex w-[450px] xl:w-[830px] h-[96px] navMenu relative top-0 right-0 items-center order-3'>
         <ul className='flex font-barlow text-white tracking-[2.3625px] xl:tracking-[2.7px] uppercase m-auto h-full text-[16px] xl:text-[19px]'>
-          {links.map(({ name, number }, index) => (
-            <li
+          {links.map(({ name, number, path }, index) => (
+            <Link
+              to={path}
               key={`${name}-link`}
               className={`${
                 index !== links.length - 1 ? 'mr-9' : 'mr-0'
@@ -64,7 +71,7 @@ const Navbar = () => {
             >
               <span className='hidden xl:block font-bold mr-5'>{number}</span>
               <span>{name}</span>
-            </li>
+            </Link>
           ))}
         </ul>
       </div>
