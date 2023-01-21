@@ -1,6 +1,6 @@
 // Libraries
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 // assets
 import logo from '../assets/shared/logo.svg';
@@ -16,6 +16,7 @@ const links = [
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav className='flex items-center p-6 md:pt-0 md:pr-0 justify-between relative xl:pl-14 xl:pt-10 xl:pr-0'>
@@ -23,6 +24,7 @@ const Navbar = () => {
         src={logo}
         alt='Logo'
         className='w-[40px] h-[40px] md:w-[48px] md:h-[48px]'
+        onClick={() => navigate('/')}
       />
       <div className='md:hidden'>
         {/* START OF MOBILE MENU */}
