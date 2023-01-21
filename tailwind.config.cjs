@@ -19,9 +19,21 @@ module.exports = {
         secondary: "#0B0D17",
       },
       backgroundImage: {
-        'mobile': "url('./src/assets/home/background-home-mobile.jpg')",
-        'tablet': "url('./src/assets/home/background-home-tablet.jpg')",
-        'desktop': "url('./src/assets/home/background-home-desktop.jpg')"
+        homeMobile: 'url(./src/assets/home/background-home-mobile.jpg)',
+        homeTablet: 'url(./src/assets/home/background-home-tablet.jpg)',
+        homeDesktop: 'url(./src/assets/home/background-home-desktop.jpg)',
+
+        destinationMobile: 'url(./src/assets/destination/background-destination-mobile.jpg)',
+        destinationTablet: 'url(./src/assets/destination/background-destination-tablet.jpg)',
+        destinationDesktop: 'url(./src/assets/destination/background-destination-desktop.jpg)',
+
+        crewMobile: 'url(./src/assets/crew/background-crew-mobile.jpg)',
+        crewTablet: 'url(./src/assets/crew/background-crew-tablet.jpg)',
+        crewDesktop: 'url(./src/assets/crew/background-crew-desktop.jpg)',
+
+        technologyMobile: 'url(./src/assets/technology/background-technology-mobile.jpg)',
+        technologyTablet: 'url(./src/assets/technology/background-technology-tablet.jpg)',
+        technologyDesktop: 'url(./src/assets/technology/background-technology-desktop.jpg)',
       }
     }
   },
