@@ -19,7 +19,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <nav className='flex items-center p-6 md:pt-0 md:pr-0 justify-between relative xl:pl-14 xl:pt-10 xl:pr-0'>
+    <nav className='flex items-center p-6 md:pt-0 md:pr-0 md:pl-[39px] justify-between relative xl:pl-14 xl:pt-10 xl:pr-0'>
       <img
         src={logo}
         alt='Logo'
