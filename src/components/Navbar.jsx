@@ -1,6 +1,6 @@
 // Libraries
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 // assets
 import logo from '../assets/shared/logo.svg';
@@ -17,6 +17,7 @@ const links = [
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const navigate = useNavigate();
+  const { pathname } = useLocation();
 
   return (
     <nav className='flex items-center p-6 md:pt-0 md:pr-0 md:pl-[39px] justify-between relative xl:pl-14 xl:pt-10 xl:pr-0'>
@@ -70,7 +71,7 @@ const Navbar = () => {
               key={`${name}-link`}
               className={`${
                 index !== links.length - 1 ? 'mr-9' : 'mr-0'
-              }  h-full flex items-center border-b-2 border-b-transparent hover:border-b-white cursor-pointer ease-in-out duration-300`}
+              }  h-full flex items-center border-b-[3px] border-b-transparent ${pathname === path && "border-b-white"} cursor-pointer ease-in-out duration-300`}
             >
               <span className='hidden xl:block font-bold mr-5'>{number}</span>
               <span>{name}</span>
