@@ -22,7 +22,7 @@ const Destination = () => {
   const [destination, setDestination] = useState(destinations[0]);
 
   return (
-    <section className='flex flex-col xl:flex-row items-center mt-8 xl:mt-16 md:pb-8 xl:pb-0 xl:max-w-[1110px] xl:justify-between m-auto'>
+    <section className='flex flex-col xl:flex-row items-center mt-8 xl:mt-16 pb-5 md:pb-8 xl:pb-0 xl:max-w-[1110px] xl:justify-between m-auto'>
       <img src={images[destinations.indexOf(destination)]} alt={destination.name} className='w-[170px] h-[170px] md:w-[300px] md:h-[300px] xl:w-[445px] xl:h-[445px] xl:mt-9' />
       <div className='flex flex-col items-center xl:items-start'>
         <nav className='font-barlow text-primary text-[14px] md:text-base leading-[17px] md:leading-[19px] mt-[26px] xl:mt-0 tracking-[2.3625px] md:tracking-[2.7px]'>
