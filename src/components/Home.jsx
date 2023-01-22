@@ -1,5 +1,5 @@
 const Home = () => (
-  <section className='flex flex-col items-center mt-7 md:mt-20 xl:mt-0 px-6 xl:flex-row justify-around xl:px-[165px] h-full xl:items-end xl:pb-[131px] md:pb-[90px]'>
+  <section className='flex flex-col items-center mt-7 md:mt-20 xl:mt-0 px-6 xl:flex-row justify-around xl:px-0 h-full xl:items-end xl:pb-[131px] md:pb-[90px]'>
     <div className='flex flex-col text-primary text-center xl:text-start max-w-[327px] md:max-w-[450px] m-auto xl:m-0'>
       <p className='font-barlow leading-[19px] md:leading-[24px] xl:leading-[34px] tracking-[2.7px] md:tracking-[3.375px] xl:tracking-[4.725px] md:text-[20px] xl:text-[28px]'>
         SO, YOU WANT TO TRAVEL TO
