@@ -24,7 +24,7 @@ const Navbar = () => {
       <img
         src={logo}
         alt='Logo'
-        className='w-[40px] h-[40px] md:w-[48px] md:h-[48px]'
+        className='w-[40px] h-[40px] md:w-[48px] md:h-[48px] cursor-pointer'
         onClick={() => navigate('/')}
       />
       <div className='md:hidden'>
