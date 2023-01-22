@@ -42,7 +42,7 @@ const Navbar = () => {
         <div
           className={`fixed right-0 top-0 navMenu slideRight z-1 h-screen w-[70%] max-w-[254px] flex ${
             openMenu ? 'translate-x-0' : 'translate-x-[254px]'
-          } ease-in-out duration-300`}
+          } ease-in-out duration-300 z-50`}
         >
           <ul className='ml-8 mt-[169px] flex flex-col'>
             {links.map(({ number, name, path }, index) => (

@@ -21,15 +21,15 @@ const Crew = () => {
   const [crew, setCrew] = useState(crewData[0]);
 
   return (
-    <section className='mt-8 md:mt-[60px] flex flex-col md:flex-col-reverse items-center xl:flex-row-reverse xl:justify-between relative xl:mt-0'>
-      <div className='w-[327px] h-[223px] md:h-full md:w-full border-b md:border-b-0 border-b-[#383B4B] flex justify-center relative xl:justify-end'>
+    <section className='mt-8 md:mt-[60px] flex flex-col md:flex-col-reverse items-center xl:flex-row-reverse xl:justify-between md:relative xl:mt-0'>
+      <div className='w-[327px] h-[223px] md:h-full md:w-full border-b md:border-b-0 border-b-[#383B4B] flex justify-center md:relative xl:justify-end'>
         <img
           src={images[crewData.indexOf(crew)]}
           alt='Crew member'
           className='w-[177.12px] h-[222px] md:w-[433px] md:h-[572px] xl:w-[569px] xl:h-[712px] bottom-0 xl:relative xl:pt-0'
         />
       </div>
-      <nav className='mt-[39px] md:mt-10 md:mb-10 xl:absolute bottom-0 left-0'>
+      <nav className='mt-[39px] md:mt-10 md:mb-10 xl:absolute xl:bottom-0 xl:left-0 z-0'>
         <ul className='flex flex-row gap-4'>
           {crewData.map(({ name }, index) => (
             <li
