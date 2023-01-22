@@ -31,7 +31,7 @@ const App = () => {
       <header>
         <Navbar />
       </header>
-      <main className={`h-auto md:px-[38.5px] xl:pl-[165px] ${pathname === "/" && "xl:h-[calc(100vh-160px-1.75rem)]"} xl:max-w-[76.36%] m-auto`}>
+      <main className={`h-auto md:px-[38.5px] ${pathname === "/" && "xl:h-[calc(100vh-160px-1.75rem)]"} xl:max-w-[1440px] xl:min-w-[1100px] m-auto`}>
         {pathname !== '/' && (
           <div className='flex justify-center md:mt-4 md:justify-start xl:mt-[76px]'>
             <p className='font-barlow tracking-[2.7px] leading-[19px] text-white md:text-[20px] md:leading-6 md:tracking-[3.375px] xl:text-[28px] xl:leading-[34px] xl:tracking-[4.725px]'>
