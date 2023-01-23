@@ -26,7 +26,7 @@ const Crew = () => {
         <img
           src={images[crewData.indexOf(crew)]}
           alt='Crew member'
-          className='w-[177.12px] h-[222px] md:w-[433px] md:h-[572px] xl:w-[569px] xl:h-[712px] bottom-0 xl:relative xl:pt-0'
+          className='w-[177.12px] h-[222px] md:w-[433px] md:h-[572px] xl:w-[569px] xl:h-[700px] bottom-0 xl:relative xl:pt-0'
         />
       </div>
       <nav className='mt-[39px] md:mt-10 md:mb-10 xl:absolute xl:bottom-0 xl:left-0 z-0'>
