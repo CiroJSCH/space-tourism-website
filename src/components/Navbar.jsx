@@ -36,7 +36,7 @@ const Navbar = () => {
             openMenu
               ? 'w-[19px] h-[19px] -rotate-180'
               : 'w-[24px] h-[21px] rotate-180'
-          } z-[2] ease-in duration-500 relative`}
+          } z-[51] ease-in duration-500 relative`}
           onClick={() => setOpenMenu((prev) => !prev)}
         />
         <div
