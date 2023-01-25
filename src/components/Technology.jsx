@@ -31,7 +31,7 @@ const Technology = () => {
               className={`grid place-content-center text-center w-[40px] h-[40px] md:w-[60px] md:h-[60px] xl:w-[80px] xl:h-[80px] tracking-[1px] md:tracking-[1.5px] leading-[18px] md:leading-[28px] xl:leading-[37px] text-white rounded-full border border-[rgba(255,255,255,0.25)] md:text-[24px] xl:text-[32px] ${
                 techData.indexOf(tech) === index &&
                 'text-[#0B0D17] bg-white cursor-pointer'
-              }`}
+              } hover:border-white cursor-pointer`}
               onClick={() => setTech(techData[index])}
             >
               {index + 1}

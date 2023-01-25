@@ -34,7 +34,7 @@ const Crew = () => {
           {crewData.map(({ name }, index) => (
             <li
               key={name}
-              className={`rounded-full w-[10px] h-[10px] xl:w-[15px] xl:h-[15px] bg-white opacity-[0.17] cursor-pointer ${
+              className={`rounded-full w-[10px] h-[10px] xl:w-[15px] xl:h-[15px] bg-white opacity-[0.17] cursor-pointer hover:opacity-50 ${
                 crewData.indexOf(crew) === index && 'opacity-100'
               }`}
               onClick={() => setCrew(crewData[index])}
