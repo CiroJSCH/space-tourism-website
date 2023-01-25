@@ -71,7 +71,11 @@ const Navbar = () => {
               key={`${name}-link`}
               className={`${
                 index !== links.length - 1 ? 'mr-9' : 'mr-0'
-              }  h-full flex items-center border-b-[3px] border-b-transparent ${pathname === path && "border-b-white"} cursor-pointer ease-in-out duration-300`}
+              }  h-full flex items-center relative border-b-[3px] border-b-transparent ${
+                  pathname === path
+                    ? 'after:hover:hidden border-b-white'
+                    : 'border-b-0 after:content-[""] after:w-0 after:h-[3px] after:bg-[rgba(255,255,255,0.5)] after:transition-[width] after:duration-300 after:ease-in after:hover:w-full after:absolute after:bottom-0 after:left-0'
+                } cursor-pointer ease-in-out duration-300`}
             >
               <span className='hidden xl:block font-bold mr-5'>{number}</span>
               <span>{name}</span>

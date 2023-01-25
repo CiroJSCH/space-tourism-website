@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Home = () => (
   <section className='flex flex-col items-center mt-7 md:mt-20 xl:mt-0 px-6 xl:flex-row justify-around xl:px-0 h-full xl:items-end xl:pb-[131px] md:pb-[90px]'>
     <div className='flex flex-col text-primary text-center xl:text-start max-w-[327px] md:max-w-[450px] m-auto xl:m-0'>
@@ -14,9 +16,9 @@ const Home = () => (
         experience!
       </p>
     </div>
-    <button className="font-belle bg-white rounded-full w-[150px] h-[150px] md:w-[242px] md:h-[242px] xl:w-[274px] xl:h-[274px] mt-[81px] md:mt-[156px] xl:mt-0 text-[20px] md:text-[32px] leading-[23px] md:leading-[37px] tracking-[1.25px] md:tracking-[2px] text-secondary cursor-pointer">
+    <Link to="/destination" className='flex items-center justify-center font-belle bg-white rounded-full w-[150px] h-[150px] md:w-[242px] md:h-[242px] xl:w-[274px] xl:h-[274px] mt-[81px] md:mt-[156px] xl:mt-0 text-[20px] md:text-[32px] leading-[23px] md:leading-[37px] tracking-[1.25px] md:tracking-[2px] text-secondary cursor-pointer hover:shadow-[0_0_0_88px_rgba(255,255,255,0.1)] duration-500'>
       EXPLORE
-    </button>
+    </Link>
   </section>
 );
 
