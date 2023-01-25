@@ -20,21 +20,21 @@ module.exports = {
         secondary: "#0B0D17",
       },
       backgroundImage: {
-        homeMobile: 'url(./src/assets/home/background-home-mobile.jpg)',
-        homeTablet: 'url(./src/assets/home/background-home-tablet.jpg)',
-        homeDesktop: 'url(./src/assets/home/background-home-desktop.jpg)',
+        homeMobile: 'url(src/assets/home/background-home-mobile.jpg)',
+        homeTablet: 'url(src/assets/home/background-home-tablet.jpg)',
+        homeDesktop: 'url(src/assets/home/background-home-desktop.jpg)',
 
-        destinationMobile: 'url(./src/assets/destination/background-destination-mobile.jpg)',
-        destinationTablet: 'url(./src/assets/destination/background-destination-tablet.jpg)',
-        destinationDesktop: 'url(./src/assets/destination/background-destination-desktop.jpg)',
+        destinationMobile: 'url(src/assets/destination/background-destination-mobile.jpg)',
+        destinationTablet: 'url(src/assets/destination/background-destination-tablet.jpg)',
+        destinationDesktop: 'url(src/assets/destination/background-destination-desktop.jpg)',
 
-        crewMobile: 'url(./src/assets/crew/background-crew-mobile.jpg)',
-        crewTablet: 'url(./src/assets/crew/background-crew-tablet.jpg)',
-        crewDesktop: 'url(./src/assets/crew/background-crew-desktop.jpg)',
+        crewMobile: 'url(src/assets/crew/background-crew-mobile.jpg)',
+        crewTablet: 'url(src/assets/crew/background-crew-tablet.jpg)',
+        crewDesktop: 'url(src/assets/crew/background-crew-desktop.jpg)',
 
-        techMobile: 'url(./src/assets/technology/background-technology-mobile.jpg)',
-        techTablet: 'url(./src/assets/technology/background-technology-tablet.jpg)',
-        techDesktop: 'url(./src/assets/technology/background-technology-desktop.jpg)',
+        techMobile: 'url(src/assets/technology/background-technology-mobile.jpg)',
+        techTablet: 'url(src/assets/technology/background-technology-tablet.jpg)',
+        techDesktop: 'url(src/assets/technology/background-technology-desktop.jpg)',
       }
     }
   },
