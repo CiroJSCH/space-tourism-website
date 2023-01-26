@@ -63,7 +63,7 @@ const Navbar = () => {
         {/* END OF MOBILE MENU */}
       </div>
       {/* START OF TABLET/DESKTOP MENU */}
-      <div className='hidden md:flex w-[450px] xl:w-[830px] h-[96px] navMenu relative top-0 right-0 items-center order-3'>
+      <div className='hidden md:flex w-[450px] xl:min-w-[830px] xl:pr-[165px] xl:pl-[123px] h-[96px] navMenu relative top-0 right-0 items-center order-3'>
         <ul className='flex font-barlow text-white tracking-[2.3625px] xl:tracking-[2.7px] uppercase m-auto h-full text-[16px] xl:text-[19px]'>
           {links.map(({ name, number, path }, index) => (
             <li
