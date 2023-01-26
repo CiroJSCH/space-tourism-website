@@ -46,17 +46,17 @@ const Navbar = () => {
         >
           <ul className='ml-8 mt-[169px] flex flex-col'>
             {links.map(({ number, name, path }, index) => (
-              <Link
-                to={path}
-                key={`link-${number}`}
-                className={`font-barlow text-white tracking-[2.7px] text-base ${
-                  index !== links.length - 1 ? 'mb-8' : 'mb-0'
-                } leading-[19px]`}
-                onClick={() => setOpenMenu(false)}
-              >
-                <span className='font-bold'>{number}</span>
-                <span className='ml-3 font-normal uppercase'>{name}</span>
-              </Link>
+              <li key={`${name}-link`}
+              className={`${index !== links.length - 1 ? 'mb-8' : 'mb-0'}`}>
+                <Link
+                  to={path}
+                  className={`font-barlow text-white tracking-[2.7px] text-base leading-[19px]`}
+                  onClick={() => setOpenMenu(false)}
+                >
+                  <span className='font-bold'>{number}</span>
+                  <span className='ml-3 font-normal uppercase'>{name}</span>
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
@@ -66,20 +66,22 @@ const Navbar = () => {
       <div className='hidden md:flex w-[450px] xl:w-[830px] h-[96px] navMenu relative top-0 right-0 items-center order-3'>
         <ul className='flex font-barlow text-white tracking-[2.3625px] xl:tracking-[2.7px] uppercase m-auto h-full text-[16px] xl:text-[19px]'>
           {links.map(({ name, number, path }, index) => (
-            <Link
-              to={path}
+            <li
               key={`${name}-link`}
-              className={`${
-                index !== links.length - 1 ? 'mr-9' : 'mr-0'
-              }  h-full flex items-center relative border-b-[3px] border-b-transparent ${
+              className={`${index !== links.length - 1 ? 'mr-9' : 'mr-0'}`}
+            >
+              <Link
+                to={path}
+                className={`h-full flex items-center relative border-b-[3px] border-b-transparent ${
                   pathname === path
                     ? 'after:hover:hidden border-b-white'
                     : 'border-b-0 after:content-[""] after:w-0 after:h-[3px] after:bg-[rgba(255,255,255,0.5)] after:transition-[width] after:duration-300 after:ease-in after:hover:w-full after:absolute after:bottom-0 after:left-0'
                 } cursor-pointer ease-in-out duration-300`}
-            >
-              <span className='hidden xl:block font-bold mr-5'>{number}</span>
-              <span>{name}</span>
-            </Link>
+              >
+                <span className='hidden xl:block font-bold mr-5'>{number}</span>
+                <span>{name}</span>
+              </Link>
+            </li>
           ))}
         </ul>
       </div>
